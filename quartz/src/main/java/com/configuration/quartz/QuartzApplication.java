@@ -1,13 +1,13 @@
-package com.https.configuration;
+package com.configuration.quartz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConfigurationApplication {
+public class QuartzApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ConfigurationApplication.class, args);
+		SpringApplication.run(QuartzApplication.class, args);
 	}
 
 }

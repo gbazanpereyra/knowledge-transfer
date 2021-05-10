@@ -1,10 +1,10 @@
-package com.https.configuration;
+package com.configuration.quartz;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConfigurationApplicationTests {
+class QuartzApplicationTests {
 
 	@Test
 	void contextLoads() {
