@@ -1,0 +1,9 @@
+#Comando para generar certificado HTTPS mediante la herramienta keytool
+  #Se generará el certificado con el alias: quartz
+  #El nombre del archivo del certificado será: quartz.p12
+
+keytool -genkeypair -alias quartz -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore quartz.p12 -validity 365000
+
+#Para chequear el certificado y su fecha de expiración debemos ejecutar el comando:
+
+keytool -list -v -keystore quartz.p12
