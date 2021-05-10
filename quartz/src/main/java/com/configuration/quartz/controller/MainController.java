@@ -10,13 +10,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("api-https")
+@RequestMapping("api-quartz")
 public class MainController {
 
     @GetMapping("/greeting")
     public ResponseEntity<?> greeting() {
         Map<String, Object> response = new HashMap<>();
-        response.put("messagge", "Hola mundo!");
+        response.put("messagge", "Hola mundo desde API Quartz!");
 
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
