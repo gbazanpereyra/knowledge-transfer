@@ -13,6 +13,15 @@ public class QuartzProperties {
     private String ipAddress;
     private String port;
     private String protocol;
+    private String path;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
 
     public Resource getCertificate() {
         return certificate;
@@ -55,6 +64,6 @@ public class QuartzProperties {
     }
 
     public String getUrl() {
-        return this.protocol + "://" + this.ipAddress + ":" + this.port + "/api-quartz";
+        return this.protocol + "://" + this.ipAddress + ":" + this.port + this.path;
     }
 }
